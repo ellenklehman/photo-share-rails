@@ -1,0 +1,12 @@
+
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: photo_share_development
+
+test:
+  <<: *default
+  database: photo_share_test
+
