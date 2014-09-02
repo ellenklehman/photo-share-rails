@@ -1,21 +1,21 @@
 <%= render('layouts/errors', :object => @user) %>
 
 <%= form_for @user do |f| %>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :email %><br />
     <%= f.text_field :email %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :password %><br />
     <%= f.password_field :password %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :password_confirmation %><br />
     <%= f.password_field :password_confirmation %>
   </div>
-  <div class="actions"><%= f.submit "Sign Up" %></div>
+ <%= f.submit "Sign Up", class: "btn btn-success" %>
 <% end %>
