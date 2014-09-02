@@ -23,7 +23,7 @@
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav">
 	      	<% if current_user %>
-		      	<li><%= link_to "Logged In", user_path(current_user) %></li>
+		      	<li>Logged In</li>
 		      	<li><%= link_to "Log Out", logout_path %></li>
 	      	<% else %>
 		      	<li><%= link_to "Sign Up", signup_path %></li>
