@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+	before_filter :authorize, except: [:show, :index]
 	def new
 		@user = User.new
 	end

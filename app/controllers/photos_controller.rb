@@ -3,6 +3,7 @@ class PhotosController < ApplicationController
 
 	def index
 		@photos = Photo.all
+		@users = User.all
 	end
 
 	def new
