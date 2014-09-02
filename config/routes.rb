@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'users#new'
 
-  resources :users, only: [:new, :create]
+  resources :users
   resources :photos
   resources :tags, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]

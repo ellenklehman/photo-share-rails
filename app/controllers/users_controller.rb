@@ -14,6 +14,18 @@ class UsersController < ApplicationController
 		end
 	end
 
+	def show
+		@user = User.find(params[:id])
+	end
+
+	def destroy
+		@user = User.find(params[:id])
+		session[:user_id] = nil
+		@user.destroy
+		flash[:notice] = "Account has been deleted."
+		redirect_to root_path
+	end
+
 private
 
   def user_params

@@ -1,0 +1,9 @@
+<h1><%= @user.name %></h1>
+
+<h4><%= @user.email %></h4>
+
+<% @user.photos.each do |photo| %>
+	<p><%= link_to image_tag @user.avatar.url(:thumb), photo_path(photo) %></p>
+<% end %>
+
+<%= link_to "Add a new photo", new_photo_path, :class => "btn btn-primary" %>
