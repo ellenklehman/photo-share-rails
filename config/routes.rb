@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   root to: 'photos#index'
 
-  resources :users
+  resources :users, except: [:index, :destroy]
   resources :photos
   resources :tags, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
