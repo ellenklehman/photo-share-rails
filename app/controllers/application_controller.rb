@@ -10,7 +10,6 @@ private
 	helper_method :current_user
 
 	def authorize
-		redirect_to login_url if current_user.nil?
-		flash[:alert] = "Not Authorized"
+		redirect_to login_url, alert: "Not authorized" if current_user.nil?
 	end
 end
