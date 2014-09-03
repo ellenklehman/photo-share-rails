@@ -2,7 +2,7 @@
 ###By Ellen Lehman
 
 ##Set Up
-To set up this program, clone the repository from Github. To set up the database on your computer, run rake db:schema:load and make sure to run the rails server. You can run the program locally by using http://localhost:3000/.
+To set up this program, clone the repository from Github. To set up the database on your computer, run rake db:schema:load and make sure to run the rails server. You can run the program locally by using http://localhost:3000/ or you can access it on Heroku at http://image-share-app.herokuapp.com/.
 
 ##What It Does
 This program allows a user to create an accout and upload photos.  The photos can be seen by anyone without authorization, but in order to add or delete a photo, the user must be signed in.
