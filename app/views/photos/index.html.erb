@@ -1,9 +1,9 @@
 <h1>Photos</h1>
 
 <% @users.each do |user| %>
-	<h4><%= user.name %></h4>
-	<% user.photos.each do |photo| %>
-		<%= image_tag photo.avatar.url(:thumb)%>
-		<p><%= link_to "View Image", photo_path(photo) %></p>
-	<% end %>
+  <h4><%= user.name %></h4>
+  <% user.photos.each do |photo| %>
+    <%= image_tag photo.avatar.url(:thumb)%>
+    <p><%= link_to "View Image", photo_path(photo) %></p>
+  <% end %>
 <% end %>

@@ -3,8 +3,8 @@
 <h4><%= @user.email %></h4>
 
 <% @user.photos.each do |photo| %>
-	<%= image_tag photo.avatar.url(:thumb)%>
-	<p><%= link_to "View Image", photo_path(photo) %></p>
+  <%= image_tag photo.avatar.url(:thumb)%>
+  <p><%= link_to "View Image", photo_path(photo) %></p>
 <% end %>
 
 <%= link_to "Add a new photo", new_photo_path, :class => "btn btn-primary" %>
